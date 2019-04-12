@@ -1,0 +1,86 @@
+<!-- RAFAEL REZENDE JUNQUEIRA -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title> Jogo da Velha SMN </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="styles.css">
+    <script src="index.html"></script>
+    <script src="jogodav.js"></script>
+</head>
+
+<body>
+
+    <div class="title">
+        <h1> JOGO DA VELHA </h1>
+    </div>
+
+    <div class="imagens">
+        <ul>
+            <!-- <img src="img/letraX.png" id="letraX" style="margin-top: 3%" width="5%" height="5%" alt="letraX">
+            <img src="img/letraO.png" id="letraO" width="5%" height="5%" alt="letraO"> -->
+        </ul>
+    </div>
+    <div class="vezDoJogador">
+        <p> Turno: </p>
+    </div>
+    <ul>
+        <div id="playerBoard" class="playerturn">
+
+            <div id="playerO" class="escolha" onclick="DefinePlayer(this)">
+                <p> O </p>
+            </div>
+            <div id="playerX" class="escolha" onclick="DefinePlayer(this)">
+                <p> X </p>
+            </div>
+        </div>
+
+        <div id="roundAtual" class="showRound">
+            <div id="scoreBoardX" class="placar">
+                <p>-</p>
+            </div>
+
+            <div id="scoreBoardO" class="placar">
+                <p>-</p>
+            </div>
+
+            <div id="roundCounter" class="round">
+                <p> - </p>
+            </div>
+        </div>
+
+        <button type="button" id="NovoJogo" class="botao" onclick="NewGame()">
+            <p> Novo Jogo </p>
+        </button>
+
+    </ul>
+    <Center>
+
+        <div id="mask" class="mascara" onclick="NewGame()">
+        </div>
+
+        <div class="main">
+            <div class="linha1">
+                <div id="00" class="corner" onclick="Jogada(this)"></div>
+                <div id="01" class="middle" onclick="Jogada(this)"></div>
+                <div id="02" class="corner" onclick="Jogada(this)"></div>
+            </div>
+            <div class="linha2">
+                <div id="10" class="corner" onclick="Jogada(this)"></div>
+                <div id="11" class="bloco" onclick="Jogada(this)"></div>
+                <div id="12" class="corner" onclick="Jogada(this)"></div>
+            </div>
+            <div class="linha3">
+                <div id="20" class="corner" onclick="Jogada(this)"></div>
+                <div id="21" class="middle" onclick="Jogada(this)"></div>
+                <div id="22" class="corner" onclick="Jogada(this)"></div>
+            </div>
+
+        </div>
+    </Center>
+</body>
+
+</html>

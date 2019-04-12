@@ -1,0 +1,196 @@
+/*RAFAEL REZENDE JUNQUEIRA */
+
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    font-family: 'PT Sans', sans-serif;
+    font-weight: normal;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+}
+
+/*Background*/
+body {
+    background-color: #343F44;
+}
+
+/*Título "Jogo da Velha"*/
+.title {
+    margin-top: 50px;
+    margin-left: 40%;
+    font-size: 30pt;
+    color: #0EE77E;
+    font-weight: bold;
+    font-weight: 200;
+}
+
+/* vez do jogador */
+.playerturn {
+    font-size: 25pt;
+    float: left;
+    margin-left: 4%;
+    color: #0EE77E;
+    margin-top: 50px;
+    background-color: transparent;
+    text-shadow: 2px 2px #111;
+}
+
+
+#scoreBoardX, #scoreBoardO {
+    margin-top: 63%;
+}
+#scoreBoardX {
+    margin-left: -62%;
+}
+
+#scoreBoardO {
+    margin-left: 85%;
+}
+
+.vezDoJogador p {
+    position: relative;
+    font-size: 300%;
+    color: #0EE77E;
+    margin-top: 2px;
+    margin-left: 3%;
+    background-color: transparent;
+    text-shadow: 2px 2px #111;
+}
+
+.placar {
+    height: 37px;
+    width: 39px;
+    float: left;
+    color: #FFF;
+    background-color: transparent;
+    border: 1px solid #0EE77E;
+    border-color: #FFF;
+    font-size: 25pt;
+    text-align: center;
+    text-shadow: 1px 1px 2px #343F44;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.showRound {
+    height: 4%;
+    width: 4%;
+    float: left;
+    border: 5px solid #0EE77E;
+    margin-top: 6%;
+    margin-left: 6.9%;
+    text-align: center;
+    padding: 10px;
+    font-size: 30px;
+    color: #0EE77E;
+    vertical-align: 50px;
+    text-shadow: 2px 3px #111;
+    position: absolute;
+    color: #FFF;
+    border-radius: 30px;
+}
+
+.escolha {
+    height: 100px;
+    width: 100px;
+    float: right;
+    border: 5px solid #0EE77E;
+    margin-top: -10%;
+    margin-right: 63px;
+    text-align: center;
+    padding: 10px;
+    font-size: 70px;
+    color: #0EE77E;
+    vertical-align: 50px;
+    text-shadow: 2px 3px #111;
+}
+
+.escolha:hover {
+    color: #1c2224;
+    background-color: #4f595d;
+    text-shadow: 2px 3px #18191a;
+}
+
+.escolha:active{
+    position: relative;
+    top: 3px;
+}
+
+.botao {
+    height: 6%;
+    width: 7%;
+    float: left;
+    border: 5px solid #0EE77E;
+    margin-top: 12%;
+    margin-left: -11%;
+    text-align: center;
+    padding: 10px;
+    font-size: 155%;
+    color: #0EE77E;
+    text-shadow: 2px 2px #111;
+    position: absolute;
+    border-radius: 8%;
+    background: transparent;
+}
+
+.botao:hover {
+    color: #1c2224;
+    background-color: #4f595d;
+    text-shadow: 2px 1px #18191a;
+}
+
+.botao:active{
+    position: relative;
+    top: 3px;
+}
+
+.main {
+    margin-top: 3%;
+    margin-left: -12%;
+    width: 600px;
+    height: 600px;
+    align-content: center;
+    justify-content: center;
+    background-color: #343F44;
+}
+
+.linha1, .linha2 {
+    height: 200px;
+    border-bottom: solid 1px;
+    color: #FFF;
+    margin-bottom: 0px;
+}
+
+.middle {
+    height: 200px;
+    width: 200px;
+    border: 1px solid #FFFFFF;
+    border-bottom-style: none;
+    border-top-style: none;
+    float: left;
+}
+
+.bloco {
+    height: 200px;
+    width: 200px;
+    border: 1px solid #FFFFFF;
+    float: left;
+}
+
+.corner {
+    height: 200px;
+    width: 200px;
+    float: left;
+}
+
+.mascara {
+    height: 100%;
+    width: 100%;
+    margin-top: -10%;
+    background-color: rgba(0, 0, 0, 0.70);
+    position: absolute;
+    margin-bottom: -170px;
+    visibility: hidden;
+}
